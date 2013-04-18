@@ -300,6 +300,80 @@ function fsrio_rpd_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-research_project-rpd_f2tcats'
+  $field_instances['node-research_project-rpd_f2tcats'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_f2tcats',
+    'label' => 'Farm-to-table categories',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_fscats'
+  $field_instances['node-research_project-rpd_fscats'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_fscats',
+    'label' => 'Food safety categories',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-research_project-rpd_funding'
   $field_instances['node-research_project-rpd_funding'] = array(
     'bundle' => 'research_project',
@@ -376,6 +450,43 @@ function fsrio_rpd_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_jifsrcats'
+  $field_instances['node-research_project-rpd_jifsrcats'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_jifsrcats',
+    'label' => 'JIFSR category',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 12,
     ),
   );
 
@@ -495,6 +606,43 @@ function fsrio_rpd_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_project_type'
+  $field_instances['node-research_project-rpd_project_type'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_project_type',
+    'label' => 'Project type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 13,
     ),
   );
 
@@ -660,12 +808,16 @@ function fsrio_rpd_field_default_field_instances() {
   t('Comments');
   t('Cooperators');
   t('End date');
+  t('Farm-to-table categories');
+  t('Food safety categories');
   t('Funding');
   t('Identifiers');
+  t('JIFSR category');
   t('Keywords');
   t('More info');
   t('Objective');
   t('Project number');
+  t('Project type');
   t('Publications');
   t('Start date');
 
