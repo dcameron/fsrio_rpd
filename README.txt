@@ -1,2 +1,19 @@
-Code is not kept on the master branch.  As of April 17, 2013 the current
-active branch is 7.x-1.x.
+CONTENTS OF THIS FILE
+---------------------
+
+ * Introduction
+ * Installation
+
+INTRODUCTION
+------------
+
+Current maintainer: David Cameron
+Original author: David Cameron <david.a.cameron@sbcglobal.net>
+
+The Research Projects Database was created for the Food Safety Research
+Information Office at the National Agricultural Library.
+
+INSTALLATION
+------------
+
+Install as usual, see http://drupal.org/node/895232 for further information.

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Research projects database feature.
+ */
+
+include_once 'fsrio_rpd.features.inc';
