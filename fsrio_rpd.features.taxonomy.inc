@@ -55,6 +55,29 @@ function fsrio_rpd_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'rpd_institutions' => array(
+      'name' => 'RPD Institutions',
+      'machine_name' => 'rpd_institutions',
+      'description' => 'Lists institutions involved in research projects',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'rpd_jifsr_categories' => array(
       'name' => 'RPD JIFSR categories',
       'machine_name' => 'rpd_jifsr_categories',
