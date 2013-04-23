@@ -55,10 +55,102 @@ function fsrio_rpd_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'rpd_funding_sources_international' => array(
+      'name' => 'RPD Funding sources - International govt.',
+      'machine_name' => 'rpd_funding_sources_international',
+      'description' => 'Lists international government funding sources of research projects',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'rpd_funding_sources_state_private' => array(
+      'name' => 'RPD Funding sources - State and private org.',
+      'machine_name' => 'rpd_funding_sources_state_private',
+      'description' => 'Lists state and private organization funding sources of research projects',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'rpd_funding_sources_us' => array(
+      'name' => 'RPD Funding sources - US govt.',
+      'machine_name' => 'rpd_funding_sources_us',
+      'description' => 'Lists US government funding sources of research projects',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'rpd_institutions' => array(
       'name' => 'RPD Institutions',
       'machine_name' => 'rpd_institutions',
       'description' => 'Lists institutions involved in research projects',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'rpd_investigators' => array(
+      'name' => 'RPD Investigators',
+      'machine_name' => 'rpd_investigators',
+      'description' => 'Lists investigators involved in research projects',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
