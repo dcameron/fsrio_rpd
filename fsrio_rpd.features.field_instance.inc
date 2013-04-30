@@ -414,6 +414,117 @@ function fsrio_rpd_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-research_project-rpd_funding_sources_intl'
+  $field_instances['node-research_project-rpd_funding_sources_intl'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_funding_sources_intl',
+    'label' => 'International government funding sources',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_funding_sources_state'
+  $field_instances['node-research_project-rpd_funding_sources_state'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_funding_sources_state',
+    'label' => 'State / Private organization funding sources',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_funding_sources_us'
+  $field_instances['node-research_project-rpd_funding_sources_us'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_funding_sources_us',
+    'label' => 'U.S. government funding sources',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'node-research_project-rpd_identifiers'
   $field_instances['node-research_project-rpd_identifiers'] = array(
     'bundle' => 'research_project',
@@ -450,6 +561,80 @@ function fsrio_rpd_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_institutions'
+  $field_instances['node-research_project-rpd_institutions'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_institutions',
+    'label' => 'Institutions',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-research_project-rpd_investigators'
+  $field_instances['node-research_project-rpd_investigators'] = array(
+    'bundle' => 'research_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'rpd_investigators',
+    'label' => 'Investigators',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 15,
     ),
   );
 
@@ -1298,6 +1483,9 @@ function fsrio_rpd_field_default_field_instances() {
   t('Funding');
   t('Identifiers');
   t('Institution');
+  t('Institutions');
+  t('International government funding sources');
+  t('Investigators');
   t('JIFSR category');
   t('Keywords');
   t('More info');
@@ -1307,6 +1495,8 @@ function fsrio_rpd_field_default_field_instances() {
   t('Project type');
   t('Publications');
   t('Start date');
+  t('State / Private organization funding sources');
+  t('U.S. government funding sources');
   t('Website URL');
 
   return $field_instances;
