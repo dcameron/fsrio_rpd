@@ -9,6 +9,29 @@
  */
 function fsrio_rpd_taxonomy_default_vocabularies() {
   return array(
+    'rpd_activity_statuses' => array(
+      'name' => 'RPD Activity statuses',
+      'machine_name' => 'rpd_activity_statuses',
+      'description' => 'Lists activity statuses of food safety research projects',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'rpd_farm_to_table_categories' => array(
       'name' => 'RPD Farm-to-table categories',
       'machine_name' => 'rpd_farm_to_table_categories',
@@ -105,52 +128,6 @@ function fsrio_rpd_taxonomy_default_vocabularies() {
       'name' => 'RPD Funding sources - US govt.',
       'machine_name' => 'rpd_funding_sources_us',
       'description' => 'Lists US government funding sources of research projects',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
-    ),
-    'rpd_institutions' => array(
-      'name' => 'RPD Institutions',
-      'machine_name' => 'rpd_institutions',
-      'description' => 'Lists institutions involved in research projects',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
-    ),
-    'rpd_investigators' => array(
-      'name' => 'RPD Investigators',
-      'machine_name' => 'rpd_investigators',
-      'description' => 'Lists investigators involved in research projects',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

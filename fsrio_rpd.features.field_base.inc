@@ -102,23 +102,31 @@ function fsrio_rpd_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'rpd_activity_status',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'taxonomy',
     'settings' => array(
       'allowed_values' => array(
-        0 => 'Inactive',
-        1 => 'Active',
+        0 => array(
+          'vocabulary' => 'rpd_activity_statuses',
+          'parent' => 0,
+        ),
       ),
-      'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'list_boolean',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'rpd_comments'
@@ -573,56 +581,41 @@ function fsrio_rpd_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'rpd_institutions',
     'foreign keys' => array(
-      'tid' => array(
+      'eck_rpd_institution' => array(
         'columns' => array(
-          'tid' => 'tid',
+          'target_id' => 'id',
         ),
-        'table' => 'taxonomy_term_data',
+        'table' => 'eck_rpd_institution',
       ),
     ),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'entityreference',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'rpd_institutions',
-          'parent' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
+        ),
+        'target_bundles' => array(
+          'rpd_institution' => 'rpd_institution',
         ),
       ),
+      'target_type' => 'rpd_institution',
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'rpd_inv_activity_status'
-  $field_bases['rpd_inv_activity_status'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'rpd_inv_activity_status',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'Inactive',
-        1 => 'Active',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'rpd_inv_email'
@@ -649,30 +642,41 @@ function fsrio_rpd_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'rpd_inv_institution',
     'foreign keys' => array(
-      'tid' => array(
+      'eck_rpd_institution' => array(
         'columns' => array(
-          'tid' => 'tid',
+          'target_id' => 'id',
         ),
-        'table' => 'taxonomy_term_data',
+        'table' => 'eck_rpd_institution',
       ),
     ),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'entityreference',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'rpd_institutions',
-          'parent' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
+        ),
+        'target_bundles' => array(
+          'rpd_institution' => 'rpd_institution',
         ),
       ),
+      'target_type' => 'rpd_institution',
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'rpd_inv_phone'
@@ -682,26 +686,13 @@ function fsrio_rpd_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'rpd_inv_phone',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 60,
-    ),
+    'module' => 'telephone',
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'telephone',
   );
 
   // Exported field_base: 'rpd_investigators'
@@ -712,30 +703,41 @@ function fsrio_rpd_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'rpd_investigators',
     'foreign keys' => array(
-      'tid' => array(
+      'eck_rpd_investigator' => array(
         'columns' => array(
-          'tid' => 'tid',
+          'target_id' => 'id',
         ),
-        'table' => 'taxonomy_term_data',
+        'table' => 'eck_rpd_investigator',
       ),
     ),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'entityreference',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'rpd_investigators',
-          'parent' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
+        ),
+        'target_bundles' => array(
+          'rpd_investigator' => 'rpd_investigator',
         ),
       ),
+      'target_type' => 'rpd_investigator',
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'rpd_jifsrcats'
