@@ -282,7 +282,7 @@ function fsrio_rpd_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'max' => 2100,
-      'min' => 2000,
+      'min' => 1970,
       'prefix' => '',
       'suffix' => '',
       'user_register_form' => FALSE,
@@ -879,7 +879,7 @@ function fsrio_rpd_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'max' => 2100,
-      'min' => 2000,
+      'min' => 1970,
       'prefix' => '',
       'suffix' => '',
       'user_register_form' => FALSE,
